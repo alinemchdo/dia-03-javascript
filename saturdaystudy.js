@@ -1,17 +1,10 @@
-const longestWord = frase => {
-    let paravraMaior = frase.split(' ');
-    let array = ' o ';
-    let result ;
-    for (let index of paravraMaior){
-        if (paravraMaior.length > array.length){
-            array = index;
-            result = array
-            
+let idade = 16
 
-        }
-    }
-    return result
+if (idade >= 18){
+    console.log('pode dirigir')
+}else{
+    console.log('Não pode')
+};
 
-}
-
-console.log(longestWord('Antorio foi ao banheiro e não sabemos o que aconteceu'));
+const verificaIdade = (idade >= 18)? 'Pode dirigir': 'Não pode';
+console.log(verificaIdade)
